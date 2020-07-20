@@ -10,4 +10,5 @@ If you want to execute the code folow this steps:
 * open file ```dist/index.html```. 
 
 ## Features
+* SweetAlert
 * webpack
