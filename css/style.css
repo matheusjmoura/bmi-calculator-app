@@ -1,0 +1,269 @@
+@import 'fonts.css';
+
+* {
+  padding: 0px;
+  margin: 0px;
+  outline: none;
+  /* font-family: 'montserratregular'; */
+}
+
+body {
+  background: #ffffff;
+  font-family: 'montserratregular';
+}
+
+/* DEFAULT ITENS */
+#master {
+  font-size: 13px;
+  /* color: #707070; */
+  font-weight: 560;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+
+#imcCalculator {
+  max-width: 600px;
+  width: 100%;
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+
+/* TITLE */
+.title {
+  margin: 20px;
+  font-size: 22px;
+  color: #1f5eaf;
+  font-weight: bold;
+  text-shadow: 14px -14px black;
+  max-width: 600px;
+  width: 100%;
+}
+
+/* INTRODUCTION */
+#introductionText {
+  font-size: 15px;
+  margin: 0 0 20px;
+  flex-direction: column;
+  text-align: justify;
+}
+
+p {
+  display: block;
+  margin-block-start: 0.5em;
+  /* margin-block-end: 1em; */
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+/* INPUT PANEL */
+#inputPanel {
+  margin: 0 0 6em;
+}
+
+.inputData {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 18px;
+}
+
+.inputData span {
+  display: block;
+  color: #1f5eaf;
+  padding: 0px 0px 5px 0px;
+}
+
+.inputData input {
+  font-size: 14px;
+  display: block;
+  width: 130px;
+  padding: 6px 10px;
+  border: 1px solid #1f5eaf;
+  border-radius: 10px;
+}
+
+input[type='text' i] {
+  padding: 8px 8px;
+}
+
+button,
+input {
+  overflow: visible;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  margin: 0;
+}
+
+/* BUTTONS */
+.listButtons {
+  float: left;
+  width: 700px;
+  margin-top: 15px;
+}
+
+.listButtons li button {
+  float: left;
+  background: #1f5eaf;
+  position: relative;
+  padding: 13px 45px 13px 28px;
+  -webkit-border-radius: 30px;
+  -khtml-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  border-radius: 30px;
+  font-size: 13px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.listButtons li button:hover {
+  background: #002a60;
+}
+
+.buttonsCalc.listButtons {
+  display: block;
+  width: 100% !important;
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+
+.buttonsCalc.listButtons li {
+  float: left;
+  margin-right: 30px;
+  margin-left: 0px;
+}
+
+.listButtons li {
+  float: right;
+  list-style-type: none;
+  margin-left: 30px;
+}
+
+.buttonsCalc.listButtons button {
+  display: inline-block;
+  vertical-align: middle;
+  outline: none;
+  border: 0px;
+}
+
+/* CLEAR BUTTON COLOR */
+.listButtons li button.orange {
+  background: #ff5202;
+}
+
+.listButtons li button.orange:hover {
+  background: #dc4500;
+}
+
+/* SPRITE ARROW */
+.sprite {
+  background-image: url(../img/sprite.png);
+}
+
+.listButtons li button .arrow {
+  position: absolute;
+  right: 14px;
+  top: 9px;
+}
+
+.sprite.arrow {
+  background-position: -173px -151px;
+  width: 15px;
+  height: 15px;
+}
+
+/* TABLE */
+.tableResults {
+  width: 100%;
+  max-width: 600px;
+}
+
+.tableResults thead tr td {
+  background: #1f5eaf;
+  color: #fff;
+  border-radius: 10px;
+  padding: 10px 20px;
+  text-transform: uppercase;
+}
+
+.tableResults tbody tr td {
+  color: #707070;
+  padding: 8px 20px;
+  text-transform: uppercase;
+  border-bottom: 1px solid #dee2e7;
+}
+
+.tableResults tbody tr.tableResultsBlue td {
+  color: #1f5eaf;
+  font-weight: bold;
+}
+
+.tableResults tbody tr {
+  border-bottom: 1px solid #707070;
+  transition: 0.2s background;
+  background: #fff;
+}
+
+.tableResults tbody tr.colorResult {
+  background-color: #ebfdea;
+  font-weight: bold;
+}
+
+.tableResults tbody tr.removeColorResult {
+  background-color: #fff;
+  font-weight: normal;
+}
+
+td {
+  display: table-cell;
+  vertical-align: inherit;
+}
+
+table {
+  border-collapse: separate;
+  /* border-spacing: 2px; */
+}
+
+tr {
+  display: table-row;
+  vertical-align: inherit;
+  border-color: inherit;
+}
+
+tbody {
+  display: table-row-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+
+thead {
+  display: table-header-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+
+/* CALC RESULT */
+.showCalcResult {
+  background: #ff5202;
+  color: #fff;
+  font-size: 22px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  width: 200px;
+  margin: 40px 0px;
+}
+
+strong {
+  font-weight: bold;
+}

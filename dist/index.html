@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IMC</title>
+
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <div id="master">
+      <h1 class="title">Cálculo de IMC</h1>
+      <div id="imcCalculator">
+        <div id="introductionText">
+          <p>
+            IMC é a sigla para Índice de Massa Corpórea, parâmetro adotado pela
+            Organização Mundial de Saúde para calcular o peso ideal de cada
+            pessoa.
+          </p>
+          <p>
+            O índice é calculado da seguinte maneira: divide-se o peso do
+            paciente pela sua altura elevada ao quadrado. Diz-se que o indivíduo
+            tem peso normal quando o resultado do IMC está entre 18,5 e 24,9.
+          </p>
+          <p>
+            Quer descobrir seu IMC? Insira seu peso e sua altura nos campos
+            abaixo e compare com os índices da tabela. Importante: siga os
+            exemplos e use pontos como separadores.
+          </p>
+        </div>
+
+        <form id="inputPanel">
+          <div class="inputData">
+            <span>Altura <small>(ex.: 1.70)</small></span>
+            <input
+              id="inputHeight"
+              type="text"
+              placeholder="Metros"
+              maxlength="4"
+            />
+          </div>
+
+          <div class="inputData">
+            <span>Peso <small>(ex.: 69.2)</small></span>
+            <input
+              id="inputWeight"
+              type="text"
+              placeholder="Quilos"
+              maxlength="6"
+            />
+          </div>
+
+          <ul class="buttonsCalc listButtons">
+            <li>
+              <button type="submit" id="submit">
+                CALCULAR <i class="sprite arrow"></i>
+              </button>
+            </li>
+            <li>
+              <button type="button" class="orange" id="clear">
+                LIMPAR <i class="sprite arrow"></i>
+              </button>
+            </li>
+          </ul>
+        </form>
+
+        <div>
+          <table class="tableResults" cellspacing="0">
+            <thead>
+              <tr>
+                <td colspan="3">Veja a interpretação do IMC</td>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr class="tableResultsBlue">
+                <td>IMC</td>
+                <td>Classificação</td>
+                <td style="text-align: center;">
+                  Obesidade <small>(grau)</small>
+                </td>
+              </tr>
+
+              <tr id="resultCalc0">
+                <td>Menor que 18,5</td>
+                <td>Magreza</td>
+                <td style="text-align: center;">0</td>
+              </tr>
+
+              <tr id="resultCalc1">
+                <td>Entre 18,5 e 24,9</td>
+                <td>Normal</td>
+                <td style="text-align: center;">0</td>
+              </tr>
+
+              <tr id="resultCalc2">
+                <td>Entre 25,0 e 29,9</td>
+                <td>Sobrepeso</td>
+                <td style="text-align: center;">I</td>
+              </tr>
+
+              <tr id="resultCalc3">
+                <td>Entre 30,0 e 39,9</td>
+                <td>Obesidade</td>
+                <td style="text-align: center;">II</td>
+              </tr>
+
+              <tr id="resultCalc4">
+                <td>Maior que 40,0</td>
+                <td>Obesidade Grave</td>
+                <td style="text-align: center;">III</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="showCalcResult">
+          <span>SEU IMC:</span>
+          <strong></strong>
+        </div>
+      </div>
+    </div>
+
+    <script src="./main.js"></script>
+    <!-- <script src="../src/index.js"></script> -->
+  </body>
+</html>
