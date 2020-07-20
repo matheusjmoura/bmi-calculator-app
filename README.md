@@ -1,6 +1,6 @@
 BMI Calculator
 ========
-A implementation using JS/ES6, HTML5, CSS3 of a BMI calculator.
+An implementation using JS/ES6, HTML5, CSS3 of a BMI calculator.
 
 ## Running 
 If you want to execute the code folow this steps:
