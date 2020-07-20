@@ -1,8 +1,10 @@
-On the project folder run the following commands:
-# Installation
-	npm init
-	npm install
+BMI Calculator
+========
+A implementation using JS/ES6, HTML5, CSS3 of a BMI calculator.
 
+## Running 
+If you want to execute the code folow this steps:
 
-# Build
-	npm run build
+1. ```npm install``` -> to install all dependencies
+3. ```npm run build``` -> build the code
+* open file ```dist/index.html```. 
